@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/allStatus"
+        android:orderInCategory="0"
+        android:icon="@drawable/ic_baseline_play_circle_filled_24"
+        android:title="All Statuses"/>
+
+    <item android:id="@+id/savedStatus"
+        android:icon="@drawable/ic_baseline_arrow_circle_down_24"
+        android:orderInCategory="0"
+        android:title="Saved Statuses"/>
+
+    <item android:id="@+id/myStatus"
+        android:icon="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:orderInCategory="0"
+        android:title="My Statuses"/>
+
+    <item android:id="@+id/Images"
+        android:icon="@drawable/ic_baseline_image_24"
+        android:orderInCategory="0"
+        android:title="Images"/>
+
+    <item android:id="@+id/Videos"
+        android:icon="@drawable/ic_baseline_video_library_24"
+        android:orderInCategory="0"
+        android:title="Videos"/>
+
+    <item android:id="@+id/Audio"
+        android:icon="@drawable/ic_baseline_audiotrack_24"
+        android:orderInCategory="0"
+        android:title="Audio"/>
+
+    <item android:id="@+id/Documents"
+        android:icon="@drawable/ic_baseline_description_24"
+        android:orderInCategory="0"
+        android:title="Documents"/>
+
+    <item android:id="@+id/AnimatedGIF"
+        android:icon="@drawable/ic_baseline_gif_24"
+        android:orderInCategory="0"
+        android:title="GIFs"/>
+
+        <item android:id="@+id/Stickers"
+            android:icon="@drawable/ic_baseline_child_care_24"
+            android:orderInCategory="0"
+            android:title="Stickers"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/sendImages"
+            android:title="Sent Images"
+            android:orderInCategory="1"/>
+        <item android:id="@+id/sendVideos"
+            android:title="Sent Videos"
+            android:orderInCategory="1"/>
+        <item android:id="@+id/sendDocuments"
+            android:title="Sent Documents"
+            android:orderInCategory="1"/>
+        <item android:id="@+id/sendAudio"
+            android:title="Sent Audio"
+            android:orderInCategory="1"/>
+        <item android:id="@+id/sendGif"
+            android:title="Sent GIFs"
+            android:orderInCategory="1"/>
+    </group>
+</menu>
