@@ -266,17 +266,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        if (arePermissionDenied()) {
-            requestPermissions(PERMISSIONS, request_code);
-            return;
-        }
-        toolbar.setTitle("All Statuses");
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AllStatusFragment()).commit();
-    }
-
-    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == request_code && grantResults.length > 0) {
@@ -325,5 +314,16 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
         else
             super.onBackPressed();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (arePermissionDenied()) {
+            requestPermissions(PERMISSIONS, request_code);
+            return;
+        }
+        toolbar.setTitle("All Statuses");
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AllStatusFragment()).commit();
     }
 }
